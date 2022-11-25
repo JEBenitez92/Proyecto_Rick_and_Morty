@@ -1,4 +1,4 @@
-import Card from './Card';
+import Card from './Card.jsx';
 
 export default function Cards(props) {
    // const { characters } = props;
@@ -8,6 +8,8 @@ export default function Cards(props) {
          species={cartas.species}
          gender={cartas.gender}
          image={cartas.image}
-         onClose={() => window.alert('Emulamos que se cierra la card')} />)}
+         key={cartas.id}
+         id={cartas.id}
+         onClose={props.onClose} />)}
    </div>;
 }
