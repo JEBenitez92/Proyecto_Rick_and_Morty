@@ -6,10 +6,13 @@ export default function SearchBar(props) {
       setCharacter(e.target.value)
    };
 
+   const limpiar =()=>{
+      setCharacter('')
+   }
    return (
       <div>
          <input type='search'  value={charater} onChange={handleChange} />
-      <button onClick={()=>props.onSearch(charater)} >Agregar</button>
+      <button onClick={()=>props.onSearch(charater)} onAuxClick={limpiar}  >Agregar</button>
       </div>
    );
 }
