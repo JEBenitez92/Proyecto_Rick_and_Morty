@@ -21,7 +21,8 @@ export default function(props){
            });
         return setCharacter({});
      }, [detailId]);
-     console.log(character);
+     
+
     return(
         <div>
             <div>
@@ -39,15 +40,9 @@ export default function(props){
             <div>
             <NavLink to={'/home'}>
                     <button>Volver</button>
-                </NavLink>
+            </NavLink>
             </div>
         </div>
     )
 }
 
-// Name
-// Status
-// Specie
-// Genrer
-// Origin
-// Image
