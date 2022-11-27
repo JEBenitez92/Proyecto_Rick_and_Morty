@@ -17,9 +17,12 @@ function App () {
           } else {
              window.alert('No hay personajes con ese ID');
           }
+          reset();
        });
  }
-
+ const reset =(e)=>{
+  setCharacter(e.target.reset())
+}
   const onClose=(id)=>{
     setCharacters(oldCharacters => oldCharacters.filter(card=>card.id !== id))
   }
