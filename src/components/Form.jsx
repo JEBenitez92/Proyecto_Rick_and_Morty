@@ -1,12 +1,13 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { validate } from "./Validate"
+import { useNavigate } from "react-router-dom"
 
 export default function From(props){
     const [useData, setData] = useState({
         usuario: "",
         contraseña: "",
     })
-
+    console.log(props)
     const [error, setError] = useState({
         usuario: "",
         contraseña: "",
@@ -24,9 +25,17 @@ export default function From(props){
           );
     }
 
+    const handleSubmit=(e)=>{
+        e.preventDefault();
+        props.login(useData);
+    }
+
+
+
     return(
         <div>
         
+            <form onSubmit={handleSubmit}>
             <label>Usuario:</label>
             <input 
             type="text" 
@@ -46,10 +55,10 @@ export default function From(props){
             onChange={handleInputChange}
             />
             {!error?null:<p className='danger'>{error.contraseña}</p>}
-            <button>Inicio</button>
+            <button type="submit">Inicio</button>
+            </form>
             
         </div>
     )
 }
 
-//Arrancar desde el punto 5

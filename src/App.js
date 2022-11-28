@@ -4,8 +4,9 @@ import Cards from './components/Cards.jsx';
 import About from './components/About.jsx';
 import Detail from './components/Detail.jsx';
 import From from './components/Form.jsx';
-import { Routes,Route, useLocation } from 'react-router-dom';
-import {useState} from 'react';
+import { Routes,Route, useLocation, useNavigate } from 'react-router-dom';
+import {useState, useEffect} from 'react';
+
 function App () {
   const [characters, setCharacters] = useState([]);
   const Location = useLocation();
@@ -23,16 +24,38 @@ function App () {
        });
  }
  
-  const onClose=(id)=>{
-    setCharacters(oldCharacters => oldCharacters.filter(card=>card.id !== id))
-  }
+ const onClose=(id)=>{
+   setCharacters(oldCharacters => oldCharacters.filter(card=>card.id !== id))
+ }
+
+ const navigate = useNavigate();
+ const [access, setAccess] = useState(false);
+ const username = 'jonathan92_24@hotmail.com';
+ const password = 'Jo1234#';
+
+ useEffect(() => {
+     !access && navigate('/');
+  }, [access]);
+
+ 
+ function login(useData) {
+     if (useData.contraseña === password && useData.usuario === username) {
+         setAccess(true);
+          navigate('/home');
+     }
+     else{
+      alert("Usuario o Contraseña INCORRECTO!!!")
+     }
+ }
+
+ 
 
   return (
     <div className='App' style={{ padding: '25px' }}>
       <div>
         {Location.pathname === "/" ? null:<Nav onSearch={onSearch} />}
       <Routes>
-        <Route path='/' element={<From />} />
+        <Route path='/' element={<From  login={login}/>} />
         <Route path='/home' element={<Cards characters={characters}
           onClose = {onClose} />} />
         <Route path='/about' element={<About />} />
