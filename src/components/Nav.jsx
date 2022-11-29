@@ -15,6 +15,9 @@ export default function Nav(props){
                 <NavLink to={'/about'}>
                     <button>About</button>
                 </NavLink>
+                <NavLink to={'/'}>
+                    <button>Cerrar sesion</button>
+                </NavLink>
             </div>
         </div>
     )
