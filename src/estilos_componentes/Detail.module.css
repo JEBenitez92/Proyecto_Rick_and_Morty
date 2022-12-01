@@ -1,0 +1,73 @@
+.contenedor{
+   display: flex;
+   position: relative;
+   bottom: 9em;
+   background-image: url('/public/Imagenes/planeta_1024x768.jpg');
+   background-size: cover;
+   border-radius: 0.5em;
+}
+
+.contenedorImagen{
+   display: flex;
+   position: relative;
+   right: 3em;
+   margin: 0%;
+   width: 400px;
+   height: 450px;
+}
+
+.contenedorImagen img{
+   position: relative;
+   border-radius: 2em;
+   left: 2em;
+   margin: 0%;
+   width: 400px;
+   height: 450px;
+
+}
+
+.contenedorh1{
+   position: relative;
+   top: 1em;
+   left: 9em;
+   margin: 0;
+}
+
+.contenedorh1 h1{
+   color: green;
+  
+}
+
+.contenedorh3{
+   position: relative;
+   top: 3em;
+   color: green;
+   text-align: start;
+   margin: 0;
+   padding: 0;
+   width: 400px;
+    height: 450px;
+}
+
+.contenedorh3 h3{
+   position: relative;
+   right: 7em;
+   font-size: 2em;
+}
+
+.boton{
+   display: flex;
+   position: relative;
+   top: 0.2em;
+   right: 5.5em;
+}
+
+.boton button{
+   background-color: red;
+   color: white;
+}
+
+
+
+
+

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Style from '../estilos_componentes/SearchBar.module.css';
 
 export default function SearchBar(props) {
    const[charater, setCharacter] = useState("")
@@ -17,7 +18,7 @@ export default function SearchBar(props) {
    }
    
    return (
-      <div>
+      <div className={Style.buscar}>
          <input type='search'  value={charater} placeholder='N° de carta....' onChange={handleChange} />
       <button onClick={()=>combinar()} >Agregar</button>
       </div>

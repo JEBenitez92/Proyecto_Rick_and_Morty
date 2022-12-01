@@ -1,0 +1,30 @@
+.buscar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buscar input{
+    position: relative;
+    font-size: 18px;
+    background-color: rgb(246, 235, 235);
+    color: rgb(4, 105, 4);
+    border: solid 0.1em;
+    border-color: black;
+    border-radius: 0.3em;
+}
+
+.buscar input :hover {
+    background-color: rgb(16, 218, 16);
+    padding: 15px;
+}
+.buscar button {
+    position: relative;
+    top: -5em;
+    font-size: 1em;
+    border-radius: 0.3em;
+    border:solid 0.1em;
+    border-color: black;
+    background-color: green;
+    margin: 0.1em;
+}

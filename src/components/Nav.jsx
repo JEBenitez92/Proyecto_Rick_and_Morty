@@ -1,14 +1,19 @@
 import { NavLink } from "react-router-dom";
 import SearchBar from "./SearchBar.jsx";
+import Style from "../estilos_componentes/Nav.module.css"
 
 export default function Nav(props){
     return(
-        <div>
+       
+        <div className ={Style.nav}>
+
             <h1>Rick and Morty</h1>
+
             <div>
             <SearchBar onSearch={props.onSearch} />
             </div>
-            <div>
+
+            <div className={Style.botones}>
                 <NavLink to={'/home'}>
                     <button>Card</button>
                 </NavLink>
@@ -16,9 +21,10 @@ export default function Nav(props){
                     <button>About</button>
                 </NavLink>
                 <NavLink to={'/'}>
-                    <button>Cerrar sesion</button>
+                    <button className={Style.cierre}>Cerrar sesion</button>
                 </NavLink>
             </div>
+
         </div>
     )
 }

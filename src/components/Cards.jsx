@@ -1,8 +1,9 @@
 import Card from './Card.jsx';
-
+import Style from "../estilos_componentes/Cards.module.css"
 export default function Cards(props) {
    // const { characters } = props;
-   return <div>
+   return (
+   <div className={Style.cards}>
       {props.characters.map(cartas => <Card
          name={cartas.name}
          species={cartas.species}
@@ -11,5 +12,6 @@ export default function Cards(props) {
          key={cartas.id}
          id={cartas.id}
          onClose={props.onClose} />)}
-   </div>;
+   </div>
+)
 }

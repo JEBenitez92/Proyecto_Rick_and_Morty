@@ -1,0 +1,9 @@
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    align-items: baseline;
+    margin: 1em;
+}

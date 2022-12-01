@@ -1,3 +1,11 @@
 .App {
+   display: flex;
+   position: relative;
+   justify-content: center;
    text-align: center;
 }
+
+html {
+   background: url('../public/Imagenes/fondo\ montaña\ cielo\ naranja.jpg') no-repeat center fixed;
+   background-size: cover;
+ }

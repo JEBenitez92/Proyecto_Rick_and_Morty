@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import { validate } from "./Validate"
 import { useNavigate } from "react-router-dom"
+import Style from '../estilos_componentes/Form.module.css'
 
 export default function From(props){
     const [useData, setData] = useState({
@@ -33,7 +34,7 @@ export default function From(props){
 
 
     return(
-        <div>
+        <div className={Style.contenedor}>
         
             <form onSubmit={handleSubmit}>
             <label>Usuario:</label>
@@ -44,7 +45,9 @@ export default function From(props){
             placeholder="Colocar nombre de usuario" 
             onChange={handleInputChange}
             />
+            <div className={Style.contenedorErro}>
             {!error?null:<p className='danger'>{error.usuario}</p>}
+            </div>
             <br />
             <label>Contraseña:</label>
             <input 
@@ -54,7 +57,9 @@ export default function From(props){
             placeholder="Colocar password" 
             onChange={handleInputChange}
             />
+            <div className={Style.contenedorErro1}>
             {!error?null:<p className='danger'>{error.contraseña}</p>}
+            </div>
             <button type="submit">Inicio</button>
             </form>
             

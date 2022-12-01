@@ -1,0 +1,54 @@
+.contenedor{
+    display: flex;
+    font-size: 1.5em;
+    height: 27em;
+    width: 30em;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    top: 2em;
+    background-image: url('/public/Imagenes/nave\ con\ letras\ verdes\ y\ fondo\ negro_1024x768.jpg');
+    background-size: cover;
+}
+
+.contenedor label{
+    position: relative;
+    top: 6em;
+    right: 1em;
+    font-size: 1em;
+    color: rgb(234, 238, 234);
+}
+
+.contenedor input{
+    position: relative;
+    top: 7.5em;
+    font-size: 0.8em;
+}
+
+.contenedor button{
+    position: relative;
+    top: 9em;
+    font-size: 0.8em;
+}
+
+.contenedorErro{
+    position: relative;
+    top: 5em;
+    background-color: white;
+    color: red;
+    justify-content: center;
+    align-content: center;
+    align-items:flex-start;
+    text-align:start;
+}
+
+.contenedorErro1{
+    position: relative;
+    top: 5em;
+    background-color: white;
+    color: red;
+    justify-content: center;
+    align-content: center;
+    align-items:flex-start;
+    text-align:start;
+}
