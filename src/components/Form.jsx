@@ -8,7 +8,6 @@ export default function From(props){
         usuario: "",
         contraseña: "",
     })
-    console.log(props)
     const [error, setError] = useState({
         usuario: "",
         contraseña: "",

@@ -4,6 +4,7 @@ import Cards from './components/Cards.jsx';
 import About from './components/About.jsx';
 import Detail from './components/Detail.jsx';
 import From from './components/Form.jsx';
+import Favorites from './components/Favorites.jsx';
 import { Routes,Route, useLocation, useNavigate } from 'react-router-dom';
 import {useState, useEffect} from 'react';
 
@@ -40,7 +41,7 @@ function App () {
  
  function login(useData) {
      if (useData.contraseña === password && useData.usuario === username) {
-         setAccess(true);
+          setAccess(true);
           navigate('/home');
      }
      else{
@@ -58,6 +59,7 @@ function App () {
         <Route path='/' element={<From  login={login}/>} />
         <Route path='/home' element={<Cards characters={characters}
           onClose = {onClose} />} />
+        <Route path='/favorites' element={<Favorites />} />
         <Route path='/about' element={<About />} />
         <Route path='/detail/:detailId' element={<Detail />} />
       </Routes>

@@ -1,0 +1,14 @@
+.contenedor {
+    display: flex;
+}
+
+
+
+.carta{
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: cornsilk;
+    margin: 1em;
+    border: solid grey;
+}

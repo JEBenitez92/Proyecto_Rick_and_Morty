@@ -1,6 +1,8 @@
 .contenedor{
    display: flex;
    position: relative;
+   flex-wrap: wrap;
+   box-sizing: border-box;
    bottom: 9em;
    background-image: url('/public/Imagenes/planeta_1024x768.jpg');
    background-size: cover;
@@ -29,8 +31,8 @@
 .contenedorh1{
    position: relative;
    top: 1em;
-   left: 9em;
-   margin: 0;
+   left: 13em;
+   margin: 0.1em;
 }
 
 .contenedorh1 h1{
@@ -40,7 +42,7 @@
 
 .contenedorh3{
    position: relative;
-   top: 3em;
+   top: 5em;
    color: green;
    text-align: start;
    margin: 0;

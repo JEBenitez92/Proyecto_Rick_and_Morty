@@ -17,6 +17,9 @@ export default function Nav(props){
                 <NavLink to={'/home'}>
                     <button>Card</button>
                 </NavLink>
+                <NavLink to={'/favorites'}>
+                    <button>Favorito</button>
+                </NavLink>
                 <NavLink to={'/about'}>
                     <button>About</button>
                 </NavLink>

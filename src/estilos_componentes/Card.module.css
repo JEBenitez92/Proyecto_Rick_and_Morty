@@ -31,10 +31,11 @@
     justify-content:center;
     align-items: center;
     left: 20.9em;
-    top: 2em;
+    top: 4em;
     color: rgb(240, 230, 230);
     width: 4em;
     padding: 0.1em; 
+    margin: 0.1em;
 }
 
 .cardh2 {
