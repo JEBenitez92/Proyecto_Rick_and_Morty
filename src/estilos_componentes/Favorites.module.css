@@ -6,6 +6,7 @@
 
 .carta{
     position: relative;
+    bottom: 8em;
     flex-direction: row;
     flex-wrap: wrap;
     background-color: cornsilk;

@@ -14,13 +14,14 @@ export default function Nav(props){
             </div>
 
             <div className={Style.botones}>
-                <NavLink to={'/home'}>
+                <NavLink to={'/home'} className={({isActive})=>(isActive? "Style.Active":null)}>
                     <button>Card</button>
                 </NavLink>
-                <NavLink to={'/favorites'}>
+                <NavLink to={'/favorites'} activeStyle={{
+         color: 'green'}}>
                     <button>Favorito</button>
                 </NavLink>
-                <NavLink to={'/about'}>
+                <NavLink to={'/about'} activeClassName={Style.Active}>
                     <button>About</button>
                 </NavLink>
                 <NavLink to={'/'}>
