@@ -1,15 +1,47 @@
 .contenedor {
     display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 
 
 .carta{
+    display: flex;
     position: relative;
-    bottom: 8em;
-    flex-direction: row;
+    bottom: 2em;
+    flex-direction:column;
     flex-wrap: wrap;
     background-color: cornsilk;
     margin: 1em;
     border: solid grey;
+}
+
+.contenedorSelector {
+    flex-direction: row;
+    
+    margin: 1em;
+
+   
+}
+
+.selector{
+    display: inline;
+    position: relative;
+    color: green;
+    background-color: black;
+    border: solid red;
+    font-size: 1.3em;
+    margin: 0.1em;
+   
+}
+
+.selector2{
+    display: inline;
+    position: relative;
+    color: green;
+    background-color: black;
+    border: solid red;
+    font-size: 1.3em;
+    margin: 0.1em;
 }
