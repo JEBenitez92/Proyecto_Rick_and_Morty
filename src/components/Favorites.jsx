@@ -37,6 +37,8 @@ export function Favorites({myFavorites}){
                 </select>
          
         </div>
+
+        <div className={Style.cartaContenedor}>
         {myFavorites.map((character,index) => (
             <div key={index} className={Style.carta} >
                 <h2>{character.name}</h2>
@@ -45,6 +47,8 @@ export function Favorites({myFavorites}){
             </div>
         )
         )}
+        </div>
+
         </div>
     )
 }

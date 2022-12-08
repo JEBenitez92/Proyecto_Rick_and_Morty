@@ -54,9 +54,9 @@ function App () {
   return (
     <div className='App' style={{ padding: '25px' }}>
       <div>
-        {Location.pathname === "/" ? null:<Nav onSearch={onSearch} />}
+        {Location.pathname === "/" ? null:<Nav onSearch={onSearch} setAccess={setAccess}/>}
       <Routes>
-        <Route path='/' element={<From  login={login}/>} />
+        <Route path='/' element={<From  login={login} />} />
         <Route path='/home' element={<Cards characters={characters}
           onClose = {onClose} />} />
         <Route path='/favorites' element={<Favorites />} />

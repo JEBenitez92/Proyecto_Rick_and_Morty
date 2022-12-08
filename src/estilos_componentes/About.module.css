@@ -1,0 +1,13 @@
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+    border-radius: 2em;
+}
+
+.contenedor p {
+    font-size: 2em;
+    color:black(187, 187, 216);
+    background-color: rgb(240, 210, 210) 
+    
+}

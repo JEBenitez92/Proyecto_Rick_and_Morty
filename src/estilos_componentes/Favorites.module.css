@@ -1,47 +1,75 @@
 .contenedor {
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    top: 16em; 
 }
 
-
+.cartaContenedor{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
 
 .carta{
     display: flex;
     position: relative;
-    bottom: 2em;
     flex-direction:column;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
     background-color: cornsilk;
-    margin: 1em;
     border: solid grey;
+    width: 250px;
+    height: 380px;
+}
+
+.carta img{
+    width: 250px;
+    height: 180px;
+}
+
+.carta h2{
+    position: relative;
+   
+}
+
+.carta h3{
+    position: relative;
+   
 }
 
 .contenedorSelector {
     flex-direction: row;
-    
+    position:fixed;
+    z-index: 2;
+    bottom: 25em;
     margin: 1em;
-
+    border: solid blue;
+    height: min-content;
    
 }
 
 .selector{
-    display: inline;
     position: relative;
     color: green;
     background-color: black;
     border: solid red;
-    font-size: 1.3em;
+    font-size: 0.9em;
     margin: 0.1em;
    
 }
 
 .selector2{
-    display: inline;
     position: relative;
     color: green;
     background-color: black;
     border: solid red;
-    font-size: 1.3em;
+    font-size: 0.9em;
     margin: 0.1em;
 }

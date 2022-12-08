@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import SearchBar from "./SearchBar.jsx";
 import Style from "../estilos_componentes/Nav.module.css"
 
@@ -7,26 +7,30 @@ export default function Nav(props){
        
         <div className ={Style.nav}>
 
+            <div className={Style.contH1} >
             <h1>Rick and Morty</h1>
+            </div>
 
-            <div>
+            <div className={Style.Buscador} >
             <SearchBar onSearch={props.onSearch} />
             </div>
 
             <div className={Style.botones}>
-                <NavLink to={'/home'} className={({isActive})=>(isActive? "Style.Active":null)}>
+                <Link to={'/home'} >
                     <button>Card</button>
-                </NavLink>
-                <NavLink to={'/favorites'} activeStyle={{
-         color: 'green'}}>
+                </Link>
+                <Link to={'/favorites'} >
                     <button>Favorito</button>
-                </NavLink>
-                <NavLink to={'/about'} activeClassName={Style.Active}>
+                </Link>
+                <Link to={'/about'} >
                     <button>About</button>
-                </NavLink>
-                <NavLink to={'/'}>
-                    <button className={Style.cierre}>Cerrar sesion</button>
-                </NavLink>
+                </Link>
+            </div>
+
+            <div>
+                <Link to= {'/'}>
+                    <button className={Style.cierre} onClick={()=> props.setAccess(false)} >Cerrar sesion</button>
+                </Link>
             </div>
 
         </div>

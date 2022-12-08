@@ -26,18 +26,23 @@ export default function(props){
 
     return(
         <div className={Style.contenedor}>
+
             <div className={Style.contenedorh1}>
                 <h1>NOMBRE: {character.name}</h1>
             </div>
+            <div className={Style.datos}>
             <div className={Style.contenedorh3}>
                 <h3>STATUS: {character.status}</h3>
                 <h3>ESPECIE: {character.species}</h3>
                 <h3>GENERO: {character.gender}</h3>
                 <h3>ORIGEN: {character.origin ?.name}</h3>
             </div>
+
             <div className={Style.contenedorImagen}>
                 <img src={character.image} alt={character.name} />
             </div>
+            </div>
+
             <div className={Style.boton}>
             <NavLink to={'/home'}>
                     <button>Volver</button>

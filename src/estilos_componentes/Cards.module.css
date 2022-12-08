@@ -1,9 +1,18 @@
 .cards{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
     justify-content: space-around;
     align-content: space-between;
     align-items: baseline;
-    margin: 1em;
+    margin: 0%;
 }
+
+
+/*
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+Esto sirve para crear las columnas.
+
+*/

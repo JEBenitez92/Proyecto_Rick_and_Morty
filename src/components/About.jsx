@@ -1,9 +1,14 @@
+import Style from "../estilos_componentes/About.module.css";
+
 export default function About(props){
     return(
-        <div>
+        <div className={Style.contenedor} >
             <h1>Jonathan Benitez</h1>
             <div>
-                <img src="C:\Users\Jonathan\Documents\Henrry\Cartas-Rick-and-Morty-2\rick_and_morty_2\public\Imagenes\universo azul_1024x768.jpg" alt="foto" />
+               <p>Esta aplicación esta basada en el anime Rick and Morty. Lo que se busco es conseguir información de una Api y presentarla en forma de tarjetas individuales. 
+Para esto cree rutas que muestren distinta información, moviéndome mediante una barra de navegación.
+El proyecto me fue solicitado por Henrry, mientras me encontraba cursando el segundo modulo del Bootcamps de Full Stack, en este instituto. 
+</p>
             </div>
         </div>
     )

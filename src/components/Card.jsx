@@ -26,6 +26,7 @@ export function Card(props) {
       }
    }
    return (
+     
    <div className={Style.contenedor}>
       <div className={Style.card}>
          <div className={Style.cardh2}>
@@ -47,6 +48,7 @@ export function Card(props) {
          <button onClick={()=>props.onClose(props.id)}>X</button>
       </div>
    </div>
+    
    );
 }
 
