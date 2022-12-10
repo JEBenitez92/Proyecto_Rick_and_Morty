@@ -9,7 +9,6 @@ export function Favorites({myFavorites}){
     const dispach =useDispatch();
     const handleClick = (e)=>{
         const { name, value} = e.target
-        console.log(orderCards(value))
         if(name === "Ordenar"){
            return dispach(orderCards(value))
         }
